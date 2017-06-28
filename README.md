@@ -19,3 +19,23 @@ npm run build --report
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## 功能说明
+
+```bash
+# 1.
+用户,组织,角色,菜单权限
+
+
+
+
+npm i normalize.css -S
+npm i animate.css -S
+npm i element-ui -S
+npm i js-cookie -S
+
+
+.css
+
+
+```
