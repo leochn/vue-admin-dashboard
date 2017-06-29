@@ -1,0 +1,93 @@
+[
+    {
+        "path":"/index",
+        "name":"首页",
+        "icon":"fa fa-dashboard",
+        "children":[
+
+        ]
+    },
+    {
+        "path":"/org",
+        "name":"组织管理",
+        "icon":"fa fa-dashboard",
+        "children":[
+            {
+                "path":"/index",
+                "name":"组织信息"
+            },
+            {
+                "path":"/users",
+                "name":"用户信息"
+            },
+            {
+                "path":"/orguser",
+                "name":"用户组织设置"
+            }
+        ]
+    },
+    {
+        "path":"/role",
+        "name":"角色管理",
+        "icon":"fa fa-dashboard",
+        "children":[
+            {
+                "path":"/index",
+                "name":"角色信息"
+            },
+            {
+                "path":"/roleuser",
+                "name":"用户角色设置"
+            }
+        ]
+    },
+    {
+        "path":"/err",
+        "name":"错误页面",
+        "icon":"fa fa-dashboard",
+        "children":[
+            {
+                "path":"/401",
+                "name":"401"
+            },
+            {
+                "path":"/404",
+                "name":"404"
+            }
+        ]
+    },
+    {
+        "path":"/example",
+        "name":"综合实例",
+        "icon":"fa fa-dashboard",
+        "children":[
+            {
+                "path":"/example/table",
+                "name":"表格",
+                "icon":"fa fa-dashboard",
+                "children":[
+                    {
+                        "path":"/dynamictable",
+                        "icon":"fa fa-dashboard",
+                        "name":"动态table"
+                    },
+                    {
+                        "path":"/dragtable",
+                        "icon":"fa fa-dashboard",
+                        "name":"拖拽table"
+                    }
+                ]
+            },
+            {
+                "path":"/form/create",
+                "icon":"fa fa-dashboard",
+                "name":"创建Form表单"
+            },
+            {
+                "path":"/tab/index",
+                "icon":"fa fa-dashboard",
+                "name":"Tab"
+            }
+        ]
+    }
+]

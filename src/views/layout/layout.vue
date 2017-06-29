@@ -5,18 +5,20 @@
         </div>
         <div class="main-container">
             <app-header/>
-            <!-- <App-main/> -->
+            <App-main/>
         </div>
     </div>
 </template>
 
 <script>
 	import Sidebar from './sidebar.vue'
-	import Header from './header.vue'
+    import Header from './header.vue'
+	import AppMain from './appMain.vue'
 	export default {
 		components:{
 			'app-header':Header,
-			'app-sidebar':Sidebar
+			'app-sidebar':Sidebar,
+            AppMain
 		},
         computed: {
           sidebar() {
