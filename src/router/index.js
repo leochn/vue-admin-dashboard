@@ -8,6 +8,7 @@ import Err404 from '../views/err/404.vue'
 import Org from '../views/org/index.vue'
 import Users from '../views/org/users.vue'
 import Orguser from '../views/org/orguser.vue'
+import InlineEditTable from '../views/table/inlineEditTable.vue'
 
 Vue.use(Router)
 
@@ -46,7 +47,16 @@ const routes = [
 		children: [
 			{ path: '/org/index', name: '组织信息', component: Org },
 			{ path: '/org/users', name: '用户信息', component: Users },
-			{ path: '/org/orguser', name: '用户组织设置', component: Orguser },
+			{ path: '/org/orguser', name: '用户组织设置', component: Orguser }
+		]
+	},
+	{
+		path: '/',
+		name:'综合实例',
+		component: Layout,
+		children: [
+			{ path: '/example/inlineEditTable', name: 'table内编辑', component: InlineEditTable },
+			{ path: '/example/table', name: '表格', component: Users }
 		]
 	}
 	// ,

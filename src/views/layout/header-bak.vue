@@ -2,12 +2,12 @@
     <el-menu class="navbar" mode="horizontal">
         <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
         <levelbar></levelbar>
-        <!-- <error-log v-if="log.length>0" class="errLog-container" :logsList="log"></error-log> -->
         <screenfull class='screenfull'></screenfull>
+        <span class='appName'>XXX管理平台</span>
         <el-dropdown class="avatar-container" trigger="click">
             <div class="avatar-wrapper">
-                <!-- <img class="user-avatar" :src="avatar+'?imageView2/1/w/80/h/80'"> -->
-                <!-- <i class="el-icon-caret-bottom" /> -->
+               <!--  <img class="user-avatar" :src="'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif?imageView2/1/w/80/h/80'"> -->
+                <img class="user-avatar" src="../../assets/user2-160x160.jpg">
             </div>
             <el-dropdown-menu class="user-dropdown" slot="dropdown">
                 <router-link class='inlineBlock' to="/">
@@ -68,6 +68,9 @@
 
 <style rel="stylesheet/scss" lang="scss" scoped>
     .navbar {
+        //width:100%;
+        //position:fixed;
+        //top:0;
         height: 50px;
         line-height: 50px;
         border-radius: 0px !important;
@@ -77,16 +80,18 @@
             float: left;
             padding: 0 10px;
         }
-        .errLog-container {
-            display: inline-block;
-            position: absolute;
-            right: 150px;
-        }
         .screenfull{
              position: absolute;
-             right: 90px;
+             right: 100px;
              top: 16px;
              color: red;
+        }
+        .appName{
+            position: absolute;
+            font-size:17px;
+            right: 140px;
+            top: 2px;
+            color: blue;
         }
         .avatar-container {
             height: 50px;
@@ -100,7 +105,7 @@
                 .user-avatar {
                     width: 40px;
                     height: 40px;
-                    border-radius: 10px;
+                    border-radius: 50px;
                 }
                 .el-icon-caret-bottom {
                     position: absolute;
@@ -112,6 +117,7 @@
         }
     }
 </style>
+
 
 
 

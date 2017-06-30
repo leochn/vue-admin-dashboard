@@ -4,7 +4,9 @@
             <app-sidebar class="sidebar-container" />
         </div>
         <div class="main-container">
-            <app-header/>
+            <div class="navbar">
+                <app-header/>
+            </div>
             <App-main/>
         </div>
     </div>
@@ -50,7 +52,16 @@
             }
             .main-container{
                 margin-left: 40px;
+                .navbar {
+                    position:fixed;
+                    height: 50px;
+                    background: #eee;
+                    top: 0;
+                    right:0;
+                    margin-left: 40px;
+                }
             }
+            
         }
         .sidebar-wrapper {
             width: 180px;
@@ -75,6 +86,15 @@
             min-height: 100%;
             transition: all .28s ease-out;
             margin-left: 180px;
+            .navbar {
+                position:fixed;
+                height: 50px;
+                background: #eee;
+                top: 0;
+                right:0;
+                margin-left: 180px;
+            }
         }
+        
     }
 </style>
