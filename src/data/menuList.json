@@ -62,31 +62,14 @@
         "icon":"fa fa-dashboard",
         "children":[
             {
-                "path":"/example/table",
-                "name":"表格",
+                "path":"/inlineEditTable",
                 "icon":"fa fa-dashboard",
-                "children":[
-                    {
-                        "path":"/dynamictable",
-                        "icon":"fa fa-dashboard",
-                        "name":"动态table"
-                    },
-                    {
-                        "path":"/dragtable",
-                        "icon":"fa fa-dashboard",
-                        "name":"拖拽table"
-                    }
-                ]
-            },
-            {
-                "path":"/form/create",
-                "icon":"fa fa-dashboard",
-                "name":"创建Form表单"
+                "name":"table内编辑"
             },
             {
                 "path":"/tab/index",
                 "icon":"fa fa-dashboard",
-                "name":"Tab"
+                "name":"表格"
             }
         ]
     }

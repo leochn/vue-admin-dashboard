@@ -1,12 +1,10 @@
 <template>
-    <el-menu class="navbar" mode="horizontal">
+    <div class="navbar111">
         <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
         <levelbar></levelbar>
-        <screenfull class='screenfull'></screenfull>
-        <span class='appName'>XXX管理平台</span>
+        <div class='header-con'>xxx平台</div>
         <el-dropdown class="avatar-container" trigger="click">
             <div class="avatar-wrapper">
-               <!--  <img class="user-avatar" :src="'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif?imageView2/1/w/80/h/80'"> -->
                 <img class="user-avatar" src="../../assets/user2-160x160.jpg">
             </div>
             <el-dropdown-menu class="user-dropdown" slot="dropdown">
@@ -23,7 +21,7 @@
                 <el-dropdown-item divided><span @click="logout" style="display:block;">退出登录</span></el-dropdown-item>
             </el-dropdown-menu>
         </el-dropdown>
-    </el-menu>
+    </div>
 </template>
 
 <script>
@@ -67,41 +65,39 @@
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-    .navbar {
-        width:100%;
-        position:fixed;
-        //top:0;
-        height: 50px;
-        line-height: 50px;
-        border-radius: 0px !important;
-        .hamburger-container {
+    //.navbar {
+        // position:fixed;
+        // height: 50px;
+        // background: #eee;
+        // //width:100%;
+        // //width:680px;
+        // top: 0;
+        // //left:180px;
+        // right:0;
+       .hamburger-container {
             line-height: 58px;
             height: 50px;
             float: left;
             padding: 0 10px;
-        }
-        .screenfull{
-             position: absolute;
-             right: 100px;
-             top: 16px;
-             color: red;
-        }
-        .appName{
-            position: absolute;
+        } 
+        .header-con {
+            display: inline-block;
+            height: 50px;
+            color: red;
             font-size:17px;
-            right: 140px;
-            top: 2px;
-            color: blue;
         }
         .avatar-container {
+            line-height: 58px;
             height: 50px;
+            float: right;
+            padding: 0 10px;
             display: inline-block;
-            position: absolute;
-            right: 35px;
+            //position: absolute;
             .avatar-wrapper {
                 cursor: pointer;
                 margin-top:5px;
-                position: relative;
+                //position: relative;
+                //float:right;
                 .user-avatar {
                     width: 40px;
                     height: 40px;
@@ -115,7 +111,9 @@
                 }
             }
         }
-    }
+        
+    //}
+    
 </style>
 
 

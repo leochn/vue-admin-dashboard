@@ -16,3 +16,9 @@
       }
     }
 </script>
+
+<style>
+  .app-main{
+    margin-top: 52px;
+  }
+</style>
