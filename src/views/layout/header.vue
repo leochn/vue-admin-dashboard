@@ -2,7 +2,7 @@
     <div class="navbar111">
         <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
         <levelbar></levelbar>
-        <div class='header-con'>xxx平台</div>
+        <!-- <div class='header-con'>xxx平台</div> -->
         <el-dropdown class="avatar-container" trigger="click">
             <div class="avatar-wrapper">
                 <img class="user-avatar" src="../../assets/user2-160x160.jpg">
@@ -92,12 +92,10 @@
             float: right;
             padding: 0 10px;
             display: inline-block;
-            //position: absolute;
             .avatar-wrapper {
                 cursor: pointer;
                 margin-top:5px;
-                //position: relative;
-                //float:right;
+                margin-right:20px;
                 .user-avatar {
                     width: 40px;
                     height: 40px;

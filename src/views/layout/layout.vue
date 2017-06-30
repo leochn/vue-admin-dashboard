@@ -58,7 +58,7 @@
                     background: #eee;
                     top: 0;
                     right:0;
-                    margin-left: 40px;
+                    left: 40px;
                 }
             }
             
@@ -92,9 +92,20 @@
                 background: #eee;
                 top: 0;
                 right:0;
-                margin-left: 180px;
+                left: 180px;
+                transition: all .28s ease-out;
             }
         }
         
     }
+
+    // .navbar {
+    //     position:fixed;
+    //     height: 50px;
+    //     background: #eee;
+    //     top: 0;
+    //     right:0;
+    //     //margin-left: 180px;
+    //     left:180px;
+    // }
 </style>
