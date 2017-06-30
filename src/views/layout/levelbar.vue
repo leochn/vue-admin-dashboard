@@ -41,6 +41,7 @@
         font-size: 14px;
         line-height: 50px;
         margin-left: 10px;
+        //color: #000; 
         .no-redirect{
           color: #0718f1;
           cursor:text;

@@ -1,8 +1,8 @@
 <template>
-    <div class="navbar111">
+    <div >
         <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
         <levelbar></levelbar>
-        <!-- <div class='header-con'>xxx平台</div> -->
+        
         <el-dropdown class="avatar-container" trigger="click">
             <div class="avatar-wrapper">
                 <img class="user-avatar" src="../../assets/user2-160x160.jpg">
@@ -21,6 +21,25 @@
                 <el-dropdown-item divided><span @click="logout" style="display:block;">退出登录</span></el-dropdown-item>
             </el-dropdown-menu>
         </el-dropdown>
+        <el-dropdown class="avatar-container" trigger="click">
+            <div class="avatar-wrapper">
+                <img class="user-avatar" src="../../assets/user2-160x160.jpg">
+            </div>
+            <el-dropdown-menu class="user-dropdown" slot="dropdown">
+                <router-link class='inlineBlock' to="/">
+                    <el-dropdown-item>
+                        首页
+                    </el-dropdown-item>
+                </router-link>
+                <router-link class='inlineBlock' to="/admin/profile">
+                    <el-dropdown-item>
+                        设置
+                    </el-dropdown-item>
+                </router-link>
+                <el-dropdown-item divided><span @click="logout" style="display:block;">退出登录</span></el-dropdown-item>
+            </el-dropdown-menu>
+        </el-dropdown>
+        <div class='header-con'>xxx平台</div>
     </div>
 </template>
 
@@ -65,15 +84,6 @@
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-        //.navbar {
-        // position:fixed;
-        // height: 50px;
-        // background: #eee;
-        // //width:100%;
-        // //width:680px;
-        // top: 0;
-        // //left:180px;
-        // right:0;
        .hamburger-container {
             line-height: 58px;
             height: 50px;
@@ -82,7 +92,13 @@
         } 
         .header-con {
             display: inline-block;
-            height: 50px;
+            float: right;
+            margin-top:15px;
+            margin-right:30px;
+            //padding: 10px 0;
+            
+            // width:150px;
+            // height: 50px;
             color: red;
             font-size:17px;
         }
@@ -90,7 +106,7 @@
             line-height: 58px;
             height: 50px;
             float: right;
-            padding: 0 10px;
+            //padding: 0 5px;
             display: inline-block;
             .avatar-wrapper {
                 cursor: pointer;

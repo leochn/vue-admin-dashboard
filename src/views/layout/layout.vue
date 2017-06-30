@@ -53,11 +53,6 @@
             .main-container{
                 margin-left: 40px;
                 .navbar {
-                    position:fixed;
-                    height: 50px;
-                    background: #ccc;
-                    top: 0;
-                    right:0;
                     left: 40px;
                 }
             }
@@ -89,7 +84,8 @@
             .navbar {
                 position:fixed;
                 height: 50px;
-                background: #ccc;
+                background: #e8e5e5;
+                box-shadow:0px 2px 1px #b3b4b7;
                 top: 0;
                 right:0;
                 left: 180px;
