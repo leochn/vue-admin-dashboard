@@ -55,7 +55,7 @@
                 .navbar {
                     position:fixed;
                     height: 50px;
-                    background: #eee;
+                    background: #ccc;
                     top: 0;
                     right:0;
                     left: 40px;
@@ -89,7 +89,7 @@
             .navbar {
                 position:fixed;
                 height: 50px;
-                background: #eee;
+                background: #ccc;
                 top: 0;
                 right:0;
                 left: 180px;
@@ -99,13 +99,4 @@
         
     }
 
-    // .navbar {
-    //     position:fixed;
-    //     height: 50px;
-    //     background: #eee;
-    //     top: 0;
-    //     right:0;
-    //     //margin-left: 180px;
-    //     left:180px;
-    // }
 </style>

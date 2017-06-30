@@ -42,7 +42,7 @@
         line-height: 50px;
         margin-left: 10px;
         .no-redirect{
-          color: #97a8be;
+          color: #0718f1;
           cursor:text;
         }
     }
