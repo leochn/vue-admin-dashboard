@@ -68,8 +68,8 @@
 
 <style rel="stylesheet/scss" lang="scss" scoped>
     .navbar {
-        width:100%;
-        position:fixed;
+        //width:100%;
+        //position:fixed;
         //top:0;
         height: 50px;
         line-height: 50px;
